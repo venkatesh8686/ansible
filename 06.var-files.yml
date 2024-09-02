@@ -1,7 +1,7 @@
 - name: var files
   hosts: web
   var_files:
-  - vars-yaml
+    - vars.yaml
   tasks:
   - name: var files
     ansible.builtin.debug:
