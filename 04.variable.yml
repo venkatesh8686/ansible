@@ -1,0 +1,6 @@
+- name: variable to print
+  hosts: web
+  tasks: 
+  - name: print the infromation
+    ansible.builtin.debug:
+      msg: "Hi this venkatesh started training in joindevops with siva duration is:120hrs Triner: siva"
