@@ -10,4 +10,4 @@
   tasks: 
   - name: print the crouse info
     ansible.builtin.debug:
-      msg: "hi started traing in {{CROUSE}} Duration is:{{DURATION}} Trainer is :{{TRAINER}}"
+      msg: "hi started traing in {{COURSE}} Duration is:{{DURATION}} Trainer is :{{TRAINER}}"
