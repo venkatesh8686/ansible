@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: passing vars in command line
-    ansible.builtin.debug:
-    msg: "hi HELLO {{NAME}}, {{GREETING}}"
+      ansible.builtin.debug:
+      msg: "hi HELLO {{NAME}}, {{GREETING}}"
