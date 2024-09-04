@@ -1,7 +1,7 @@
 - name: testing conditions
   hosts: local
   connection: local
-  var_prompt: my_number
+  vars_prompt: my_number
   - name: my_number
     prompt: please enter any number
     private: false
