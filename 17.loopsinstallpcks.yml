@@ -1,0 +1,12 @@
+- name: using loops install pcks
+  hosts: web
+  become: yes
+  tasks: 
+  - name: installing packages
+    ansible.builting.packages:
+      name: "{{item}}"
+      state: present
+    loop:
+    - mysql
+    - nginx
+    - postfix
