@@ -22,4 +22,4 @@
     vars:
       numbers: [1,2,3,4,43,2,2]
     ansbile:builtin.debug:
-      mag: "{{number | unique}}"
+      mag: "{{ numbers | unique}}"
