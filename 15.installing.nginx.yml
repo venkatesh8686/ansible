@@ -4,7 +4,7 @@
   tasks:
   - name: print the status
     ansible.builtin.debug:
-    msg: "{{ansible_facts}}"
+      msg: "{{ansible_facts}}"
 
   - name: install nginx if Redhat
     ansible.builtin.dnf:
