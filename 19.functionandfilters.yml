@@ -1,6 +1,6 @@
 - name: function and filters
   hosts: local
-  connections: local
+  connection: local
   tastk:
   - name: print default
     ansible.builtin.debug:
