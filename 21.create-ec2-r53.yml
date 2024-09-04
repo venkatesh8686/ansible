@@ -19,12 +19,12 @@
       security_group: "{{sg_id}}"
       image_id: "{{ami_id}}"
     loop: "{{ instance }}"
-    register: ec2_instances
+    register: ec2_instance
 
   - name: getting ip
     ansible.builtin.debug:
-      msg: "{{ ec2_instances }}"
-      
+      msg: "{{ ec2_instance }}"
+
   - name: create r53 record
     amazon.aws.route53:
       state: present
@@ -35,5 +35,5 @@
       value: "{{ item.instance[0].private_ip_address }}"
       wait: true
       overwrite: true
-    loop: "{{ ec2_instances.results }}"
+    loop: "{{ ec2_instance.results }}"
 
