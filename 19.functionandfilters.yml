@@ -1,7 +1,7 @@
 - name: function and filters
   hosts: local
   connection: local
-  tastk:
+  tasks:
   - name: print default
     ansible.builtin.debug:
       msg: "helo{{course | default ('Ansible')}}"
