@@ -1,0 +1,11 @@
+- name: using loops install pcks
+  hosts: web
+  become: yes
+  tasks: 
+  - name: installing packages
+    ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - { name: 'mysql', state: 'present'}
+    - { name: 'mginx', state: 'absent'}
