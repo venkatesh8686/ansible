@@ -2,10 +2,15 @@
   hosts: web
   become: yes
   tasks:
-  - name: creating user
+  - name: checking the user
     ansible.builtin.command: id expense
     register: USER
+    ignore_errors: TRUE
 
   - name: print the user info
     ansible.builtin.debug:
       msg: "user info is {{USER}}"
+  
+  - name: creating a user
+    ansible.builtin.command: useradd expense
+    when: USER. != 0 
