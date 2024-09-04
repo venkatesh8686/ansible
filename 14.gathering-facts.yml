@@ -1,5 +1,5 @@
 - name: gathering fast
-  hsots: web
+  hosts: web
   become: yes
   tasks:
   - name: gathering fast
