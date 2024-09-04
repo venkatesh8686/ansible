@@ -1,0 +1,7 @@
+- name: gathering fast
+  hsots: web
+  become: yes
+  tasks:
+  - name: gathering fast
+    ansible.builtin.debug:
+      msg: " seeing what happed {{ansible_facts}}"
