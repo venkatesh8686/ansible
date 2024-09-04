@@ -24,7 +24,7 @@
   - name: getting ip
     ansible.builtin.debug:
       msg: "{{ ec2_instances }}"
-
+      
   - name: create r53 record
     amazon.aws.route53:
       state: present
