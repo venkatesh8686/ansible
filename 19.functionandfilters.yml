@@ -4,4 +4,16 @@
   tasks:
   - name: print default
     ansible.builtin.debug:
-      msg: "helo{{course | default ('Ansible')}}"
+      msg: "helo {{course | default ('Ansible')}}"
+    
+  - name: convert to upper case
+    vars: 
+    greeting: "hello venki"
+    ansible.builting.debug:
+      msg: "{{ greeting | upper }}"
+    
+  - name: convert to lower case
+    vars: 
+    greeting: "HELLO WORLD"
+    ansible.builting.debug:
+      msg: "{{ greeting | lower }}"
