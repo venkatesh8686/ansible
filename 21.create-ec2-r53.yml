@@ -9,6 +9,7 @@
     - mysql
     - backend
     - frontend
+    zone: vvsmgold.online
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
@@ -23,3 +24,16 @@
   - name: getting ip
     ansible.builtin.debug:
       msg: "{{ec2_instance}}"
+
+  - name: create r53 record
+    amazon.aws.route53:
+      state: present
+      zone: "{{ zone }}"
+      record: "{{item.item}}.{{zone}}"
+      type: A
+      ttl: 1
+      value: "{{item.instance[0].private_ip_address}}"
+      wait: TRUE
+      overwrite: TRUE
+    loop: "{{ec2-instance.result}}"
+
