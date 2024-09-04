@@ -29,3 +29,9 @@
       numbers: [1,2,3,4,5,7]
     ansible.builtin.debug:
       msg: "min{{ numbers | min}}, max {{ numbers | max}}"
+
+  - name: checking ip address
+    vars:
+      myip: "172.31.24.110"
+    ansible.builtin.debug:
+      msg: "{{ myip | ansible.utils.ipv4}}"
