@@ -4,5 +4,8 @@
   - name: intall nginx
     ansible.builtin.package:
       name: nginx
-      state: Install
+      state: Installed
+  - name: playing the installing status
+    ansible.builtin.debug:
+      msg: " here we go the installing the nginx"
 
