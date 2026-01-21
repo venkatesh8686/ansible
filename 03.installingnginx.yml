@@ -10,5 +10,8 @@
     ansible.builtin.service:
       name: nginx
       state: started
+  - name : installed nginx
+    ansible.builtin.debug:
+      msg: "Installed nginx succesfully you can play now"
   
 
