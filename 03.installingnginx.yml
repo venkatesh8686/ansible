@@ -2,7 +2,7 @@
   hosts: web
   tasks:
   - name: intall nginx
-    ansible.builtin.packages:
+    ansible.builtin.package:
       msg: "Installing nginx"
       name: nginx
       state: Install
