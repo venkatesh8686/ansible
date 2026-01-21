@@ -3,7 +3,8 @@
   tasks:
   - name: intall nginx
     ansible.builtin.package:
-      msg: "Installing nginx"
       name: nginx
       state: Install
+    ansible.builtin.debug:
+      msg: " here we go the installing the nginx"
 
