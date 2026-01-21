@@ -1,6 +1,6 @@
 - name: Play the task-1
   hosts: web
   tasks:
-    - name: playing the Play-1 form task-1
-     ansible.builtin.debug:
+  - name: playing the Play-1 form task-1
+    ansible.builtin.debug:
       msg: "am form taks-1"
