@@ -5,10 +5,7 @@
   - name: intall nginx
     ansible.builtin.package:
       name: nginx
-      state: present
-  - name: Reload systemd daemon
-    ansible.builtin.systemd_service:
-      daemon_reload: true
+      state: absent
   - name: run  nginx
     ansible.builtin.service:
       name: nginxs
