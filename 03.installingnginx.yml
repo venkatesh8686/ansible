@@ -8,9 +8,9 @@
       state: present
   - name: run niginx
     ansible.builtin.service:
-      name: run nginx
+      name: nginxs
       state: started
-      enabled:  yes
+      enabled: yes
   - name: installed and running sucfully
     ansible.builtin.debug:
       msg: "sucfully installed and running nginx"
