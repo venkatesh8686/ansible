@@ -1,18 +1,18 @@
 - name: Installing the nginx
   hosts: web
-  become: yes # its take root user access
+  become: yes
   tasks:
-  - name: intall nginx
+  - name: installing nginx
     ansible.builtin.package:
-      name: nginx
+      name: install nginx
       state: present
-  - name: run  nginx
+  - name: run niginx
     ansible.builtin.service:
-      name: nginxs
+      name: run nginx
       state: started
-      #enabled: yes
-  - name : installed nginx
+      enabled: yes
+  - name: installed and running sucfully
     ansible.builtin.debug:
-      msg: "Installed nginx succesfully you can play now"
+      msg: "sucfully installed and running nginx"
   
 
