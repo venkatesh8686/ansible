@@ -6,10 +6,12 @@
     ansible.builtin.package:
       name: install nginx
       state: present
+
   - name: run the nginx
     ansible.builtin.service:
       name: running nginx
       state: started
+
   - name: installed and running the nginx
     ansible.builtin.debug:
       msg: "Installed nginx and running succfully now you can start the processes"
