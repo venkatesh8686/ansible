@@ -7,4 +7,4 @@
   tasks:
   - name: printing the vars
     ansible.builtin.debug:
-        msg: "Hi venkatesh your {{COURSE}}, {{DURATION}}: is, and the {{TIME}}: get start be focuses" 
+        msg: "Hi venkatesh your {{CROUSE}}, {{DURATION}}: is, and the {{TIME}}: get start be focuses" 
