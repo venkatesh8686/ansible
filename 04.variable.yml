@@ -5,6 +5,6 @@
     DURATION: "10 HRS"
     TIME: "7:00 PM"
   tasks:
-    -name: printing the vars
-    ansible.builtin.debug:
-      msg: "Hi venkatesh your {{COURSE}}, {{DURATION}}: is, and the {{TIME}}: get start be focuses" 
+    - name: printing the vars
+      ansible.builtin.debug:
+        msg: "Hi venkatesh your {{COURSE}}, {{DURATION}}: is, and the {{TIME}}: get start be focuses" 
