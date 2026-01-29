@@ -8,7 +8,7 @@
       state: present
   - name: run  nginx
     ansible.builtin.service:
-      name: nginxs
+      name: nginx
       state: started
       enabled: yes
   - name: showing message
