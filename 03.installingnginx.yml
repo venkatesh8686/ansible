@@ -5,6 +5,7 @@
     ansible.builtin.package:
       name: nginx
       state: present
+      become: true
   - name: Showing the status
     ansible.builtin.debug:
       msg: "The nginx installed"
