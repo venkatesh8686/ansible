@@ -1,10 +1,6 @@
-- name: using vars in ansible
+- name: Playing with variables
   hosts: web
-  vars:
-    CROUSE: "Ansible"
-    DURATION: "10 HRS"
-    TIME: "7:00 PM"
   tasks:
-  - name: printing the vars
-    ansible.builtin.debug:
-        msg: "Hi venkatesh your {{CROUSE}}, duration is {{DURATION}}:, and the time is started on {{TIME}}: be focused" 
+    - name: print the info
+      ansible.builtin.debug:
+        msg: "this is venkatesh learing ansible aws looking for job change"
