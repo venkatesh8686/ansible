@@ -13,6 +13,6 @@
       enabled: yes
   - name: showing message
     ansible.builtin.debug:
-      msg: "Hi there installed nginx and running succfully enjoy"
+      msg: "Hi there nginx was installed succesfully and running"
   
 
