@@ -10,6 +10,7 @@
     ansible.builtin.service:
       name: nginx
       state: started  
+      enabled: yes
   - name: Showing the status
     ansible.builtin.debug:
       msg: "The nginx installed and running "
