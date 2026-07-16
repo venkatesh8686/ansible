@@ -1,9 +1,9 @@
 - name: Playing with variables
   hosts: web
   vars:
-    NAME: {{venkatesh}}
-    CROUSE: {{Ansible}}
-    FOCUS: {{for job change}}
+    NAME: "venkatesh"
+    CROUSE: "Ansible"
+    FOCUS: "for job change"
   tasks:
     - name: print the info
       ansible.builtin.debug:
