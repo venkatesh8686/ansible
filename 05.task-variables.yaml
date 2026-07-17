@@ -11,7 +11,7 @@
 
   - name: print the information again
     vars: # Task level varables
-      COURSE "Python"
+      COURSE: "Python"
     ansible.builtin.debug:
       msg: "Hi this venkatesh started training in {{COURSE}}, duration is {{DURATION}}, Trainer is{{TRAINER}}"
     
