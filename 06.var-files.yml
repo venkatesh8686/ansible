@@ -1,8 +1,9 @@
-- name: Varaibles from files
+- name : Learing varables with var files
   hosts: web
   vars_files:
     - vars.yaml
   tasks:
-  - name: print the course info
+  - name: Print the info gettin through var files
     ansible.builtin.debug:
-      msg: "Hi this venkatesh started training in {{COURSE}}, duration is :{{DURATION}}, Trainer is:{{TRAINER}}"
+      msg: "Hi this is vekatesh started tarining {{COURSE}} duration {{DURATION}}, trainer name {{NAME}}"
+      
