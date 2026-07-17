@@ -17,4 +17,4 @@
     
   - name: print the info again 
     ansible.builtin.debug:
-      msg : "Hi this is venkatesh started training in {{CROUSEE}}, duration is {{DURATION}}, Trainer is {{TRAINER}}"
+      msg: "Hi this is venkatesh started training in {{CROUSEE}}, duration is {{DURATION}}, Trainer is {{TRAINER}}"
