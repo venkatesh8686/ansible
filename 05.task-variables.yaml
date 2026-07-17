@@ -14,3 +14,7 @@
       CROUSE: "Python"
     ansible.builtin.debug:
       msg: "Hi this venkatesh started training in {{CROUSE}}, duration is {{DURATION}}, Trainer is{{TRAINER}}"
+    
+  - name: print the info again 
+    ansible.builtin.debug:
+      msg : "Hi this is venkatesh started training in {{CROUSEE}}, duration is {{DURATION}}, Trainer is {{TRAINER}}"
