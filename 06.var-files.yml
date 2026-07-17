@@ -5,5 +5,5 @@
   tasks:
   - name: Print the info gettin through var files
     ansible.builtin.debug:
-      msg: "Hi this is vekatesh started tarining {{COURSE}} duration {{DURATION}}, trainer name {{NAME}}"
-      
+      msg: "Hi this is vekatesh started tarining {{COURSE}} duration {{DURATION}}, trainer name {{TRAINER}}"
+
