@@ -1,6 +1,8 @@
 - name: Installing and running nginx
   hosts: web
   become: true
+  vars_files:
+    - vars.yaml
   tasks:
   - name: Installing nginx
     ansible.builtin.package:
@@ -14,3 +16,8 @@
   - name: Installed info
     ansible.builtin.debug:
       msg: "Hi there nginx installed succfully and running"
+
+  - name: Gathering info 
+    ansible.builtin.debug:
+      msg: "hii there ams sstarted {{COURSE}}, duration {{DURATION}}, Trainer name {{TRAINER}} "
+
