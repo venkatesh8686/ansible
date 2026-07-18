@@ -4,6 +4,7 @@
   vars_files:
     - vars.yaml
   tasks:
+  # Installing packages and running the services
   - name: Installing nginx
     ansible.builtin.package:
       name: nginx
@@ -17,6 +18,7 @@
     ansible.builtin.debug:
       msg: "Hi there nginx installed succfully and running"
 
+  # Var-files
   - name: Gathering info 
     ansible.builtin.debug:
       msg: "hii there ams sstarted {{COURSE}}, duration {{DURATION}}, Trainer name {{TRAINER}} "
