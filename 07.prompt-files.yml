@@ -3,10 +3,13 @@
   vars_prompt:
     - name: CROUSE
       prompt: Please Enter the Crouse name
+      private: false
     - name: DURATION
       prompt: Please Enter the Crouse duration
+      private: false
     - name: TRAINER
       prompt: Please Enter the Trainer name
+      private: false
   tasks:
     - name: printing the infromation
       ansible.builtin.debug:
