@@ -1,20 +1,21 @@
-- name: variable to print
+- name: print the infromation
   hosts: web
-  vars:
-    COURSE: "devops with AWS"
-    DURATION: "120hr"
-    TRAINER: "siva"
-  vars_files:
-    - vars.yaml
+  var:
+      COURSE: "This is devops from variables"
+      TRAINER: "Venkatesh"
+  var_files:
+    - vars.yaml 
   vars_prompt:
-  - name: COURSE
-    prompt: please enter the course name
-    private: false
-  tasks: 
-  - name: print the infromation
-    vars:
-      COURSE: "devops with AWS"
-      DURATION: "120hr"
-      TRAINER: "siva"
-    ansible.builtin.debug:
-      msg: "Hi this venkatesh started training in {{COURSE}}"
+    - name: printing the prompt type varaibles
+      prompt: please enter coruse name
+      private: false
+  tasks:
+    - name: print the information
+      vars:
+        COURSE: "DEVOPS with task level varaibles"
+    - name: checking which will take first priporty
+      ansible.builtin.debug:
+        msg: "Hi this {{COURSE}}, tainer name{{TRAINER}}"
+  
+  
+
