@@ -3,7 +3,7 @@
   vars:
       COURSE: "This is devops from variables"
       TRAINER: "Venkatesh"
-  var_files:
+  vars_files:
     - vars.yaml 
   vars_prompt:
     - name: printing the prompt type varaibles
