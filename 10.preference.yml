@@ -13,6 +13,10 @@
     - name: args varalabies playing
       ansible.builtin.debug:
         msg: "Hii {{COURSE}}, GOOD {{TRAINER}}"
+        
+    - name: print the infromation
+      ansible.builtin.debug:
+        msg: "Hi this venkatesh started training in {{COURSE}}, Trainer is:{{TRAINER}}"
 
     - name: print the information
       vars:
