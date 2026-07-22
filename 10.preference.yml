@@ -10,6 +10,10 @@
       prompt: please enter coruse name
       private: false
   tasks:
+    - name: args varalabies playing
+      ansible.builtin.debug:
+        msg: "Hii {{COURSE}}, GOOD {{TRAINER}}"
+
     - name: print the information
       vars:
         COURSE: "DEVOPS with task level varaibles"
