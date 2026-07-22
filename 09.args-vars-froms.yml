@@ -3,4 +3,4 @@
   tasks:
   - name: args varalabies playing
     ansible.builtin.debug:
-      msg: "Hii {{NAME}}, good {{MORNING}}"
+      msg: "Hii {{NAME}}, GOOD {{GREETING}}"
