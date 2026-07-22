@@ -13,6 +13,9 @@
     - name: print the information
       vars:
         COURSE: "DEVOPS with task level varaibles"
+      ansible.builtin.debug:
+        msg: "this is task level {{COURSE}}"
+    
     - name: checking which will take first priporty
       ansible.builtin.debug:
         msg: "Hi this {{COURSE}}, tainer name{{TRAINER}}"
