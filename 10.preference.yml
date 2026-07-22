@@ -1,6 +1,6 @@
 - name: print the infromation
   hosts: web
-  var:
+  vars:
       COURSE: "This is devops from variables"
       TRAINER: "Venkatesh"
   var_files:
