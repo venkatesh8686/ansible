@@ -16,4 +16,4 @@
   tasks:
     - name: print the information of data types
       ansible.builtin.debug:
-      msg: "Course is {{ coruse}}, duration was {{Duration:}}, boolean values is {{boolean}},toics was{{Topics:}}, tools are in {{tools}}"
+        msg: "Course is {{ coruse}}, duration was {{Duration:}}, boolean values is {{boolean}},toics was{{Topics:}}, tools are in {{tools}}"
