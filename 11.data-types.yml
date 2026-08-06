@@ -1,6 +1,6 @@
 - name: Data types
   hosts: local
-  connection: local
+  #connection: local
   vars:
     coruse: "Devops with AWS" # String
     Duration: 120hr #Number
