@@ -1,5 +1,6 @@
 - name: Data types
   hosts: local
+  connection: local
   vars:
     coruse: Devops # String
     Duration: 120hr #Number
