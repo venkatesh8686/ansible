@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    coruse: "Devops" # String
+    coruse: "Devops with AWS" # String
     Duration: 120hr #Number
     boolean: True # values
     Topics: 
