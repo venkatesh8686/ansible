@@ -6,15 +6,15 @@
     Duration: 120hr #Number
     boolean: True # values
     Topics: 
-       - python
-       - Devops
-       - ansible
-       - Linux
+      - python
+      - Devops
+      - ansible
+      - Linux
     tools: #Map
       CI: Jenkines
       CM: ansible
       Cloud: AWS
   tasks:
-    - name: print the information of data types
-      ansible.builtin.debug:
-        msg: "Course is {{ coruse}}, duration was {{Duration:}}, boolean values is {{boolean}},toics was{{Topics:}}, tools are in {{tools}}"
+  - name: print the information of data types
+    ansible.builtin.debug:
+      msg: "Course is {{ coruse}}, duration was {{Duration:}}, boolean values is {{boolean}},toics was{{Topics:}}, tools are in {{tools}}"
